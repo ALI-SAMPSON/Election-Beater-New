@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903942413491",
+    "firebase_url": "https://election-beater-adfd7.firebaseio.com",
+    "project_id": "election-beater-adfd7",
+    "storage_bucket": "election-beater-adfd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903942413491:android:e22ac9bc0ebea737",
+        "android_client_info": {
+          "package_name": "com.example.icode.electionbeater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903942413491-4jvhtmomqanp80kuhdi1mghbsm6jh081.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.icode.electionbeater",
+            "certificate_hash": "ed8971356359c5f3597e443a92d5626d1cd3c72b"
+          }
+        },
+        {
+          "client_id": "903942413491-lvbk4btu0al9hs8b0hrfhav0jqamdg4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbmS9cOZUgKhXa2dScJbnYhJeU-g6ZPwk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903942413491-lvbk4btu0al9hs8b0hrfhav0jqamdg4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
