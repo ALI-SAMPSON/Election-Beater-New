@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--String values for Voter Registration-->
+    <!--String Values to populate in the spinner View for Voter's Level-->
+    <string-array name="level">
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+
+    <!--String Values to populate in the spinner View for Voter's Gender-->
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!--String Values to populate in the spinner View for Voter's Programme-->
+    <string-array name="programme">
+        <item>IT</item>
+        <item>CS</item>
+    </string-array>
+
+</resources>

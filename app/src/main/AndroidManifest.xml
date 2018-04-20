@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Activities.activities.SplashScreenActivity" />
+        <activity android:name=".Activities.activities.SliderView" />
+        <activity android:name=".Activities.activities.AdminLoginActivity" />
+        <activity android:name=".Activities.activities.AdminPanel" />
+        <activity android:name=".Activities.activities.App_Info" />
+        <activity android:name=".Activities.activities.App_Info_Admin" />
+        <activity android:name=".Activities.activities.CastVoteActivity" />
+        <activity android:name=".Activities.activities.LoginActivity" />
+        <activity android:name=".Activities.activities.RegisterCandidateActivity" />
+        <activity android:name=".Activities.activities.RegisterActivity" />
+        <activity android:name=".Activities.activities.RegistrationActivity" />
+        <activity android:name=".Activities.activities.ViewResults"></activity>
     </application>
 
 </manifest>
