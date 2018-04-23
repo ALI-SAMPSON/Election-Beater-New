@@ -85,7 +85,8 @@ public class AdminLoginActivity extends AppCompatActivity {
         final String myPin = textInputEditTextPin.getText().toString();
 
         //displays the progressDialog with a title when logging admin in
-        progressDialog = ProgressDialog.show(AdminLoginActivity.this, "Logging In...", null, true, true);
+        progressDialog = ProgressDialog.show(AdminLoginActivity.this, "Logging In", null, true, true);
+        progressDialog.setMessage("Please wait...");
 
 
         adminRef.child(admin_id).addValueEventListener(new ValueEventListener() {

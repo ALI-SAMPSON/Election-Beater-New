@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.icode.electionbeater">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.Camera" android:required="true"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_icon"
@@ -9,13 +18,13 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.activities.SplashScreenActivity" >
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Activities.activities.RegisterCandidateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Activities.activities.SliderView" />
         <activity android:name=".Activities.activities.AdminLoginActivity" />
         <activity android:name=".Activities.activities.AdminPanel" />
@@ -23,9 +32,10 @@
         <activity android:name=".Activities.activities.App_Info_Admin" />
         <activity android:name=".Activities.activities.CastVoteActivity" />
         <activity android:name=".Activities.activities.LoginActivity" />
-        <activity android:name=".Activities.activities.RegisterCandidateActivity" />
+        <activity android:name=".Activities.activities.SplashScreenActivity" />
         <activity android:name=".Activities.activities.RegistrationActivity" />
         <activity android:name=".Activities.activities.ViewResults" />
+        <activity android:name=".Activities.activities.PortfolioCategories"></activity>
     </application>
 
 </manifest>
