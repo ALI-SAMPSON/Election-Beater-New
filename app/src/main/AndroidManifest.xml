@@ -2,15 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.icode.electionbeater">
     package="de.hdodenhof.circleimageview">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-
-    <uses-feature android:name="android.hardware.Camera" android:required="true"/>
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +36,10 @@
         <activity android:name=".Activities.activities.RegisterCandidateActivity" />
         <activity android:name=".Activities.activities.RegistrationActivity" />
         <activity android:name=".Activities.activities.ViewResults" />
-        <activity android:name=".Activities.activities.PortfolioCategories"/>
+        <activity android:name=".Activities.activities.PortfolioCategories" />
+        <activity android:name=".Activities.activities.ViewCandidates" />
+        <activity android:name=".Activities.activities.ManageElection" />
+        <activity android:name=".Activities.activities.ManageAccount"></activity>
     </application>
 
 </manifest>
