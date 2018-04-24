@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#262938</color>
-    <color name="colorPrimaryDark">#181A24</color>
-    <color name="colorAccent">#f824d3b6</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent1">#f824d3b6</color>
 
     <color name="colorPrimary1">#00bcd4</color>
     <color name="colorPrimaryDark1">#0097a7</color>
@@ -15,18 +15,28 @@
     <color name="colorGray">#4d4d4d</color>
     <color name="holo_red_light">#c21f16</color>
     <color name="back_color">#FFF54E4E</color>
-    <color name="colorAccent1">#FF4081</color>
+
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBlue">#FF0386DB</color>
     <color name="colorViolet">#81779D</color>
+    <color name="colorBlue">#FF0386DB</color>
     <color name="colorVioletLight">#A292C7</color>
     <color name="colorVioletDeep">#6d73c9</color>
     <color name="colorTransparentWhite">#cccccc</color>
 
+    <!--Dashboard Colors-->
+    <color name="colorDeepPurple">#7c4dff</color>
+    <color name="materialgreen">#00bfa5</color>
+    <color name="materialyellow">#FFC107</color>
+    <color name="materialDarkYellow">#FFA000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background_color">#fcfcfc</color>
+    <color name="lightgrey">#ededed</color>
+
     <color name="bg_login">#26ae90</color>
     <color name="bg_register">#2e3237</color>
     <color name="bg_main">#428bca</color>
-    <color name="background_color">#009688</color>
+
     <color name="black">#000000</color>
     <color name="white_greyish">#EEEEEE</color>
     <color name="button_selector_color">#9E9E9E</color>
