@@ -104,7 +104,11 @@ public class AdminLoginActivity extends AppCompatActivity {
                         }, 5000);   // the timer will count 5 seconds....
                         clearTextFields();
                         Toast.makeText(AdminLoginActivity.this, "You have Successfully Logged In...", Toast.LENGTH_LONG).show();
+                       // Admin admin = new Admin();
                         Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
+                        //intentManageAcc.putExtra("Admin ID", admin.getAdmin_id());
+                        intentPanel.putExtra("Pin", admin.getPin());
+                        intentPanel.putExtra("key",admin.getAdmin_id());
                         startActivity(intentPanel);
 
                     } else {

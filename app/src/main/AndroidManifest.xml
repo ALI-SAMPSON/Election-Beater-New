@@ -19,7 +19,7 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.activities.ManageAccount">
+        <activity android:name=".Activities.activities.AdminLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,11 +27,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.activities.SliderView" />
-        <activity android:name=".Activities.activities.AdminLoginActivity" />
+        <activity android:name=".Activities.activities.AdminPanel" />
         <activity android:name=".Activities.activities.SplashScreenActivity" />
         <activity android:name=".Activities.activities.App_Info" />
         <activity android:name=".Activities.activities.App_Info_Admin" />
-        <activity android:name=".Activities.activities.AdminPanel" />
+        <activity android:name=".Activities.activities.ManageAccount" />
         <activity android:name=".Activities.activities.LoginActivity" />
         <activity android:name=".Activities.activities.RegisterCandidateActivity" />
         <activity android:name=".Activities.activities.RegistrationActivity" />
