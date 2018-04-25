@@ -1,7 +1,9 @@
 package com.example.icode.electionbeater.Activities.activities;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -85,12 +87,12 @@ public class PortfolioCategories extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String portfolio = String.valueOf(parent.getItemAtPosition(position));
-                //switch(portfolio){
-                //    case portfolio.equals(0:
-                        Intent intentVote = new Intent(PortfolioCategories.this,CastVoteActivity.class);
-                        startActivity(intentVote);
-               // }
+                //open the castVoteActivity in order for the voter to cast vote
+                Intent intentVote = new Intent(PortfolioCategories.this,CastVoteActivity.class);
+                startActivity(intentVote);
+
                 Toast.makeText(PortfolioCategories.this,"Welcome to the "+ portfolio +" Category", Toast.LENGTH_LONG).show();
+
             }
         });
 
