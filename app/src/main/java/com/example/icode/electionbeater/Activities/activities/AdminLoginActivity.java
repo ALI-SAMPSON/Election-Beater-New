@@ -37,6 +37,9 @@ public class AdminLoginActivity extends AppCompatActivity {
 
     Admin admin;
 
+    String admin_id;
+    String myPin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,13 +108,41 @@ public class AdminLoginActivity extends AppCompatActivity {
                         clearTextFields();
                         Toast.makeText(AdminLoginActivity.this, "You have Successfully Logged In...", Toast.LENGTH_LONG).show();
                        // Admin admin = new Admin();
-                        Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
-                        //intentManageAcc.putExtra("Admin ID", admin.getAdmin_id());
-                        intentPanel.putExtra("Pin", admin.getPin());
-                        intentPanel.putExtra("key",admin.getAdmin_id());
-                        startActivity(intentPanel);
+                        //Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
+                        //startActivity(intentPanel);
 
-                    } else {
+                            Intent intent_manageAdminAccount = new Intent(AdminLoginActivity.this, ManageAccount.class);
+                            intent_manageAdminAccount.putExtra("admin_id", admin.getAdmin_id());
+                            intent_manageAdminAccount.putExtra("pin", admin.getPin());
+                            intent_manageAdminAccount.putExtra("key", admin.getAdmin_id());
+                            startActivity(intent_manageAdminAccount);
+                            AdminLoginActivity.this.finish();
+
+
+                        /*if(intent_manageAdminAccunt.hasExtra("admin_id")
+                                && intent_manageAdminAccunt.hasExtra("pin")
+                                && intent_manageAdminAccunt.hasExtra("key"))
+                        {
+                            Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
+                            startActivity(intentPanel);
+                        }*/
+
+
+                       // AdminLoginActivity.this.finish();
+
+                        try {
+                            startActivity(new Intent(AdminLoginActivity.this, AdminPanel.class));
+                        }
+                        catch (Exception e){
+                            e.printStackTrace();
+                        }
+
+
+                        /*Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
+                        startActivity(intentPanel);*/
+
+                    }
+                    else {
                         final Timer timer = new Timer();
                         timer.schedule(new TimerTask() {
                             public void run() {
