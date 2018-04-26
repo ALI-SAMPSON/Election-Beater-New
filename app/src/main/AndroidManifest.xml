@@ -39,7 +39,8 @@
         <activity android:name=".Activities.activities.AdminLoginActivity" />
         <activity android:name=".Activities.activities.CastVoteActivity" />
         <activity android:name=".Activities.activities.ManageElection" />
-        <activity android:name=".Activities.activities.PortfolioCategories"/>
+        <activity android:name=".Activities.activities.PortfolioCategories" />
+        <activity android:name=".Activities.activities.DeleteCandidate"></activity>
     </application>
 
 </manifest>
