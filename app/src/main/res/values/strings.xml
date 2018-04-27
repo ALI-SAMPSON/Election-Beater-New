@@ -13,6 +13,7 @@
     <string name="hint_portfolio">Portfolio</string>
     <string name="add_candidate">Register Candidate</string>
     <string name="delete_candidate">Delete Candidate</string>
+    <string name="update_candidate">Update Candidate</string>
     <string name="admin_panel">ADMINISTRATOR PANEL</string>
     <string name="open_vote">OPEN VOTING PROCESS</string>
     <string name="close_vote">CLOSE VOTING PROCESS</string>
