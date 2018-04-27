@@ -111,12 +111,12 @@ public class AdminLoginActivity extends AppCompatActivity {
                         //Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
                         //startActivity(intentPanel);
 
-                            Intent intent_manageAdminAccount = new Intent(AdminLoginActivity.this, ManageAccount.class);
+                          /*  Intent intent_manageAdminAccount = new Intent(AdminLoginActivity.this, ManageAccount.class);
                             intent_manageAdminAccount.putExtra("admin_id", admin.getAdmin_id());
                             intent_manageAdminAccount.putExtra("pin", admin.getPin());
                             intent_manageAdminAccount.putExtra("key", admin.getAdmin_id());
                             startActivity(intent_manageAdminAccount);
-                            AdminLoginActivity.this.finish();
+                            AdminLoginActivity.this.finish();*/
 
 
                         /*if(intent_manageAdminAccunt.hasExtra("admin_id")
@@ -130,16 +130,9 @@ public class AdminLoginActivity extends AppCompatActivity {
 
                        // AdminLoginActivity.this.finish();
 
-                        try {
-                            startActivity(new Intent(AdminLoginActivity.this, AdminPanel.class));
-                        }
-                        catch (Exception e){
-                            e.printStackTrace();
-                        }
 
-
-                        /*Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
-                        startActivity(intentPanel);*/
+                        Intent intentPanel = new Intent(AdminLoginActivity.this, AdminPanel.class);
+                        startActivity(intentPanel);
 
                     }
                     else {
@@ -183,7 +176,7 @@ public class AdminLoginActivity extends AppCompatActivity {
     }
 
     //takes the voter to the login activity
-    public void onVoterLoginTextViewLinkClick(View view){
+    public void onVoterLinkClick(View view){
         startActivity(new Intent(getApplicationContext(),LoginActivity.class));
     }
 }
