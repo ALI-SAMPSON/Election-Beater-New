@@ -8,7 +8,13 @@
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
     <item name="android:statusBarColor">@color/colorPrimary</item>
+
 </style>
+
+    <!--change the appearance of the hint in the TextInputLayout-->
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
 
 
 </resources>
