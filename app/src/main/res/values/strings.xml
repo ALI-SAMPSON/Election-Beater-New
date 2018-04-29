@@ -45,7 +45,7 @@
     <string name="error_pin_match">Pin does not match</string>
     <string name="error_valid_id_pin">Invalid Student ID or Pin</string>
     <string name="slide_description">Slider Description</string>
-    <string name="app_info">Election Beater is an Android-Based
+    <string name="app_info">Easy Vote is an Android-Based
         Voting System designed and developed by iCODE Studios and
         personally by Ali Sampson Awenbolimi.It is a property of
         the Computer Science of the University of Ghana. This is however
@@ -54,9 +54,9 @@
         help curb distance issues when it comes to departmental elections
         thereby electing proficient and efficient leaders to govern the
         affairs of the student body of the department. Below are my contact details:
-        Email : alisampson@gmail.com -
+        Email : alisampson2@gmail.com -
         Twitter : @icode_i -
         Facebook : Sampson Ali -
-        Tel : +233245134112 - </string>
+        Tel : +233245134112 / +233209062445 - </string>
 
 </resources>

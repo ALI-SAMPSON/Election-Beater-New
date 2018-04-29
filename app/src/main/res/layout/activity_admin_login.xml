@@ -57,7 +57,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/hint_pin"
                     android:textColorHint="@color/colorText"
-                    android:inputType="textPassword"
+                    android:inputType="numberPassword"
                     android:maxLines="1"/>
             </android.support.design.widget.TextInputLayout>
 

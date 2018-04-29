@@ -11,8 +11,8 @@
 
     <!--String Values to populate in the spinner View for Candidate's Programme-->
     <string-array name="candidate_programme">
-        <item>IT</item>
         <item>CS</item>
+        <item>IT</item>
     </string-array>
 
     <!--String Values to populate in the spinner View for Candidate's Portfolio-->
@@ -21,7 +21,7 @@
         <item>Vice President</item>
         <item>Secretary</item>
         <item>Financial Secretary</item>
-        <item>Organiser Secretary</item>
+        <item>Organising Secretary</item>
         <item>General Secretary</item>
         <item>PRO</item>
     </string-array>

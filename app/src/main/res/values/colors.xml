@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimary">#0d75b9</color>
     <color name="colorPrimaryDark">#222222</color>
     <color name="colorAccent1">#f824d3b6</color>
 
@@ -40,4 +40,6 @@
     <color name="black">#000000</color>
     <color name="white_greyish">#EEEEEE</color>
     <color name="button_selector_color">#9E9E9E</color>
+
+    <color name="light_blue">#00d4ff</color>
 </resources>
