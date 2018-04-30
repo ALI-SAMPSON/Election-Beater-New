@@ -19,7 +19,8 @@
 
 
     <ListView
-        android:id="@+id/listView_view_results"
+        android:background="@color/white_greyish"
+        android:id="@+id/viewResults_listView"
         android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

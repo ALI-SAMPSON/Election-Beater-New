@@ -8,12 +8,28 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.example.icode.electionbeater.Activities.Models.BallotBox;
 import com.example.icode.electionbeater.R;
+import com.firebase.ui.database.FirebaseListAdapter;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ViewResults extends AppCompatActivity {
 
+    //reference to the listview Object
+    ListView listView;
+
+    //reference to the FirebaseDatabase object
+    FirebaseDatabase database;
+
+    //reference to the DatabaseReference object
+    DatabaseReference ballotboxRef;
 
 
     @Override
@@ -32,6 +48,56 @@ public class ViewResults extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        database = FirebaseDatabase.getInstance();
+        ballotboxRef = database.getReference().child("BallotBox");
+
+        listView = (ListView)findViewById(R.id.viewResults_listView);
+
+        viewResults();
+    }
+
+    public void viewResults(){
+
+        FirebaseListAdapter<BallotBox> adapter = new FirebaseListAdapter<BallotBox>(
+                ViewResults.this,
+                BallotBox.class,
+                R.layout.view_results_list_item,
+                ballotboxRef)
+        {
+            @Override
+            protected void populateView(View v, BallotBox model, int position) {
+                //get reference to the IDs of the textViews and the imageView defined in the .xml file
+                ImageView imageView = (ImageView)v.findViewById(R.id.candidate_imageView);
+                TextView candidate_id = (TextView)v.findViewById(R.id.candidate_id);
+                TextView full_name = (TextView)v.findViewById(R.id.full_name);
+                TextView programme = (TextView)v.findViewById(R.id.programme);
+                TextView portfolio = (TextView)v.findViewById(R.id.portfolio);
+                TextView numberOfVotes = (TextView)v.findViewById(R.id.numberOfVotes);
+
+                  /*sets the text of the textview and the image of the ImageView
+                to all the details retrieved from the database
+                 */
+                BallotBox ballotBox = (BallotBox) model;
+                Glide.with(ViewResults.this).load(ballotBox.getImageAddress()).into(imageView);
+                candidate_id.setText("Candidate ID : " + ballotBox.getCandidate_id());
+                full_name.setText("Fullname :  " + ballotBox.getFull_name());
+                programme.setText("Programme : " + ballotBox.getProgramme());
+                portfolio.setText("Portfolio : " + ballotBox.getPortfolio());
+                numberOfVotes.setText("Number of Votes : " + ballotBox.getNumberOfvotes());
+            }
+        };
+        listView.setAdapter(adapter);
+
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
     }
 
     @Override
@@ -55,7 +121,7 @@ public class ViewResults extends AppCompatActivity {
                 startActivity(intentAbout);
                 break;
             case R.id.good_day:
-                msg = "Hello, Welcome Back!";
+                msg = "Hello, enjoy viewing the results of this election!";
                 Toast.makeText(ViewResults.this, msg, Toast.LENGTH_LONG).show();
                 break;
         }
