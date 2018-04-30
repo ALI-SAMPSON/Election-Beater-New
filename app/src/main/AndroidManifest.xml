@@ -40,7 +40,8 @@
         <activity android:name=".Activities.activities.CastVoteActivity" />
         <activity android:name=".Activities.activities.RegisterCandidateActivity" />
         <activity android:name=".Activities.activities.PortfolioCategories" />
-        <activity android:name=".Activities.activities.UpdateDeleteCandidate"></activity>
+        <activity android:name=".Activities.activities.UpdateDeleteCandidate" />
+        <activity android:name=".Activities.activities.Start_End_Election"></activity>
     </application>
 
 </manifest>
