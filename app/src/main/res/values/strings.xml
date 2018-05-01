@@ -6,6 +6,7 @@
     <string name="hint_level">Level</string>
     <string name="hint_programme">Programme</string>
     <string name="hint_id">ID:</string>
+    <string name="hint_candidate_id">Candidate ID</string>
     <string name="hint_student_id">Student ID</string>
     <string name="hint_admin_id">Admin ID</string>
     <string name="hint_pin">Pin</string>
@@ -30,6 +31,7 @@
     <string name="text_save">Save</string>
     <string name="text_picture">Picture:</string>
     <string name="text_cancel">Cancel</string>
+    <string name="vote">Vote</string>
     <string name="text_logo_name">iCODE Studios</string>
     <string name="error_message_full_name">Enter Full Name</string>
     <string name="error_message_student_id">Enter Valid Student ID</string>

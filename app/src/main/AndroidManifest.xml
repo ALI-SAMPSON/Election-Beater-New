@@ -19,7 +19,7 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.activities.LoginActivity">
+        <activity android:name=".Activities.activities.CastVoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,12 +37,13 @@
         <activity android:name=".Activities.activities.RegisterCandidateActivity" />
         <activity android:name=".Activities.activities.ViewResults" />
         <activity android:name=".Activities.activities.AdminLoginActivity" />
-        <activity android:name=".Activities.activities.CastVoteActivity" />
+        <activity android:name=".Activities.activities.LoginActivity" />
         <activity android:name=".Activities.activities.ViewCandidates" />
         <activity android:name=".Activities.activities.PortfolioCategories" />
         <activity android:name=".Activities.activities.UpdateDeleteCandidate" />
         <activity android:name=".Activities.activities.Start_End_Election" />
-        <activity android:name=".Activities.activities.ViewResultsVoter"></activity>
+        <activity android:name=".Activities.activities.ViewResultsVoter" />
+        <activity android:name=".Activities.activities.VoteActivity"></activity>
     </application>
 
 </manifest>
