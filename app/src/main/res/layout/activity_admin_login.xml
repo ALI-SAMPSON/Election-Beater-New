@@ -3,10 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/cardview_bg"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
@@ -20,12 +18,11 @@
         android:layout_height="300dp"
         android:background="@color/colorBlue"
         android:orientation="vertical">
-        <android.support.v4.widget.CircleImageView
+        <ImageView
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/admin_image"
-            android:background="@drawable/circular_image_view"
+            android:src="@mipmap/admin_image1"
             android:layout_marginTop="20dp"/>
     </LinearLayout>
 
