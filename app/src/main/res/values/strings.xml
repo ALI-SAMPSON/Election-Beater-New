@@ -24,6 +24,7 @@
     <string name="text_gender">Gender:</string>
     <string name="text_programme">Programme:</string>
     <string name="text_portfolio">Portfolio:</string>
+    <string name="text_election_year">Election Year:</string>
     <string name="text_login">Login</string>
     <string name="text_sign_up">Sign Up</string>
     <string name="text_register">Register</string>
