@@ -16,8 +16,11 @@ import com.bumptech.glide.Glide;
 import com.example.icode.electionbeater.Activities.Models.BallotBox;
 import com.example.icode.electionbeater.R;
 import com.firebase.ui.database.FirebaseListAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ViewResults extends AppCompatActivity {
 
@@ -78,11 +81,27 @@ public class ViewResults extends AppCompatActivity {
                  */
                 BallotBox ballotBox = (BallotBox) model;
                 Glide.with(ViewResults.this).load(ballotBox.getImageAddress()).into(imageView);
-                candidate_id.setText("Candidate ID : " + ballotBox.getCandidate_id());
-                full_name.setText("Fullname :  " + ballotBox.getFull_name());
-                programme.setText("Programme : " + ballotBox.getProgramme());
-                portfolio.setText("Portfolio : " + ballotBox.getPortfolio());
-                numberOfVotes.setText("Number of Votes : " + ballotBox.getNumberOfvotes());
+                candidate_id.setText(" Candidate ID : " + ballotBox.getCandidate_id());
+                full_name.setText(" Fullname :  " + ballotBox.getFull_name());
+                programme.setText(" Programme : " + ballotBox.getProgramme());
+                portfolio.setText(" Portfolio : " + ballotBox.getPortfolio());
+                numberOfVotes.setText(" Number of Votes : " + getCount());
+
+                ballotboxRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        long count = dataSnapshot.getChildrenCount();
+                        TextView numberOfVotes = (TextView)findViewById(R.id.numberOfVotes);
+                        numberOfVotes.setText("Number Of Votes: " + count);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+
             }
         };
         listView.setAdapter(adapter);

@@ -53,7 +53,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/hint_admin_id"
-                    android:textColorHint="@color/colorText"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
                     android:inputType="text"
                     android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
@@ -74,7 +75,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/hint_pin"
-                    android:textColorHint="@color/colorText"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
                     android:inputType="numberPassword"
                     android:maxLines="1"/>
             </android.support.design.widget.TextInputLayout>
